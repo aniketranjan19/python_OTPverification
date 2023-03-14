@@ -9,7 +9,7 @@ digits = "0123456789"
 OTP = ""
 for i in range(0, 6):
     OTP = OTP + digits[math.floor(random.random()*10)]
-message = OTP + " is your One Time Password for verification process."
+message = OTP + " " +"is your One Time Password for verification process."
 
 
 s = smtplib.SMTP('smtp.gmail.com', 587)
